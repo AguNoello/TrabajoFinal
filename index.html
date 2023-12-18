@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos.css">
+    <link rel="shortcut icon" href="Favicom/BANDERA-ARG-con-blanco_Mesa-de-trabajo-1.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.google.com/specimen/Montserrat">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Argentina Vota</title>
+</head>
+
+<body>
+
+    <header>
+        <button class="abrir-menu" id="abrir"><i class='bx bx-menu'></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class='bx bx-x-circle'></i></button>
+            <ul class="nav-list">
+                <li><a id="LinkMenu" href="index.html"> <B>INICIO</B></a></li>
+                <li><a id="LinkMenu" href="DEBATE.html"> <B>PRIMER DEBATE</B></a></li>
+                <li><a id="LinkMenu" href="DEBATE 2.html"> <B>SEGUNDO DEBATE</B></a></li>
+                <li><a id="LinkMenu" href="RESULTADOS.html"> <B>RESULTADOS</B></a></li>
+                <li><a id="LinkMenu" href="usuario.html"> <B>COMENTARIOS</B></a></li>
+            </ul>
+        </nav>
+    </header>
+    <img id="Imagen-header" src="Imagenes/ARRIBA ARG VOTA con títulos.png" alt="Isologo Argentina Vota" width="100%">
+
+    <main>
+        <div class="CONTENEDOR">
+
+
+            <section class="Links-Candidatos">
+                <ul>
+                    <li class="JML"><a href="Javier Milei.html"> <img src="Imagenes\MILEI HOME_Mesa de trabajo 1.png"
+                                alt="Javier Milei link a su page" width="330"></a>
+                    </li>
+                    <li class="PBL"><a href="Patricia Bullricj.html"> <img
+                                src="Imagenes\BULLRICH HOME_Mesa de trabajo 1.png"
+                                alt="Patricia Bullrich link a su page" width="250"></a>
+                    </li>
+                    <li class="SML"><a href="Sergio Massa.html"> <img src="Imagenes\MASSA HOME_Mesa de trabajo 1.png"
+                                alt="Sergio Massa link a su page" width="330"></a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="Links-Candidatos2">
+                <ul>
+                    <li class="JSL"><a href="Juan Schiaretti.html"> <img
+                                src="Imagenes\SCHIARETTI HOME_Mesa de trabajo 1.png"
+                                alt="Juan Schiaretti link a su page" width="330"></a>
+                    </li>
+                    <li class="MBL"><a href="Myriam Bregman.html"> <img
+                                src="Imagenes\BREGMAN HOME_Mesa de trabajo 1.png" alt="Myriam Bregman link a su page"
+                                width="330"></a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <aside id="Servicios">
+        <div class="CONTENEDOR">
+            <H2>CONTACTANOS</H2>
+            <FORM id="formulario" onsubmit="return validarFormulario()">
+                <label for="name">Nombre:</label>
+                <input class="text" type="text" id="name" name="name" placeholder="Ingrese su nombre" >
+
+                <label for="mail">M@il:</label>
+                <input class="text" type="email" id="mail" name="mail" placeholder="Ingrese su mail" >
+
+                <label for="message">Consulta:</label>
+                <textarea name="message" id="message" cols="30" rows="15"></textarea>
+                <p id="mensajeValidacion"></p>
+                <input class="boton-consulta" type="submit" value="Enviar Consulta">
+            </FORM>
+            <br>
+            <br>
+            <H2>¿DONDE VOTO?</H2>
+            <iframe width="50%" height="600" src="https://www.padron.gob.ar/" frameborder="1em"></iframe>
+        </div>
+
+    </aside>
+
+    <footer>
+        <div class="CONTENEDOR">
+            <div class="contenedor-ff">
+
+                <div class="Redes-Sociales-FF">
+                    <ul>
+                        <li><a href="https://www.instagram.com/infoDINE"> <img
+                                    src="Imagenes\INSTAGRAM_Mesa de trabajo 1.png" alt="Icono instagam" width="50"></a>
+                        </li>
+                        <li><a href="https://twitter.com/infoDINE"> <img src="Imagenes\TWITTER_Mesa de trabajo 1.png"
+                                    alt="Icono twitter" width="50"></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/InfoDINE"> <img
+                                    src="Imagenes\FACEBOOK_Mesa de trabajo 1.png" alt="Icono facebook" width="50"></a>
+                        </li>
+                        <li><a href="https://www.youtube.com/InfoDINETV"> <img
+                                    src="Imagenes\YOUTUBE_Mesa de trabajo 1.png" alt="Icono youtube" width="50"></a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="Imagenes/qrcode_arg Lo que hay que saber sobre las elecciones.png"
+                                alt="QR preguntas frecuentes" width="90"></li>
+                    </ul>
+
+                </div>
+                <div class="Derechos-reservados">
+                <p> © 2023 Argentina Vota todos los derechos reservados. <i>» DESARROLLO WEB: GVillanueva, GSantella & NPaggi · 23541 CODO A CODO</i></p>
+                </div>
+                </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
