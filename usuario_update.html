@@ -13,29 +13,30 @@ integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+f
 <!-- place navbar here -->
 </header>
 <main>
-<div class="container" id="app">
-<form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-<h2>Editar Usuario </h2>
-<div class="mb-3">
-    <label for="nombre">Nombre de Usuario</label>
-    <input type="text" name="username" id="username" v-model="username">
-    </div>
-    <div class="mb-3">
-    <label for="precio">Nombre completo</label>
-    <input type="text" name="firstname" id="firstname" v-model="firstname">
-    </div>
-    
-    <div class="mb-3">
-    <label for="stock">Comentario</label>
-    <input type="text" name="comment" id="comment" v-model="comment">
-    </div>
-    <div class="mb-3">
-    <label for="imagen">Correo</label>
-    <input type="text" name="email" id="email" v-model="email">
-    </div>
-    <button type="button" class="btn btn-success"
+            <div class="container" id="app">
+                <form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
+                <h2>Editar Usuario </h2>
+                <div class="mb-3">
+                <label for="id">Id</label>
+                <input type="number" name="id" id="id" disabled v-model="id" >
+                <label for="username">Nombre de Usuario</label>
+                <input type="text" name="username" id="username" v-model="username">
+                </div>
+                <div class="mb-3">
+                <label for="firstname">Nombre completo</label>
+                <input type="text" name="firstname" id="firstname" v-model="firstname">
+                </div>
 
-</div>
+                <div class="mb-3">
+                <label for="comment">Comentario</label>
+                <input type="text" name="comment" id="comment" v-model="comment">
+                </div>
+                <div class="mb-3">
+                <label for="email">Correo</label>
+                <input type="text" name="email" id="email" v-model="email">
+                </div>
+                <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
+            </div>
 </main>
 <footer>
 <!-- place footer here -->
