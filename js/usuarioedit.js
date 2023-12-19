@@ -11,7 +11,7 @@ createApp({
       firstname: "",
       comment: "",
       email: "",
-      url: 'https://agunoello.pythonanywhere.com/usuarios/' + id,
+      url: 'https://agunoello.pythonanywhere.com/usuarios' + id,
       error: false, // Agrega la propiedad error con valor inicial false
     };
   },
