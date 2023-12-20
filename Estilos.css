@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Young+Serif&display=swap');
 
 
@@ -1037,3 +1038,1044 @@ EX Footer {
 
 /* fin del media Q. */
 
+=======
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Young+Serif&display=swap');
+
+
+/*
+COLORES
+	https://g.co/kgs/XYFgBV
+	https://www.color-hex.com/
+
+	Blanco	HEX	#FFF		#ffffff
+	Negro	HEX #000		#000000
+	Azul 	HEX #38739D
+			R 56 - G 115 - B 157
+			C 64%, M 27%, Y 0%, K 38%
+	Azul Intermedio HEX #5581B3
+			R 85 - G 129 - B 179
+			C 53%, M 28%, Y 0%, K 30%
+	Celeste HEX #87C4DE
+			R 135 - G 196 - B 222
+			C 39%, M 12%, Y 0%, K 13%
+	Amarillo HEX #EFB943
+			R 239 - G 185 - B 67
+			C 0%, M 23%, Y 72%, K 6%
+
+	[Mismos códigos de colores -Celeste, blanco & amarillo- usados para ilustrar el favicom de la bandera argentina que generaron un buen contraste.]
+
+TIPOGRAFÍAS
+	Monserrat (disponible en Google font: https://fonts.google.com/specimen/Montserrat)
+	Young Serif (disponible en Google font: https://fonts.google.com/specimen/Young+Serif)
+
+	LLAMADO> font-family: 'Montserrat', sans-serif;
+	LLAMADO> font-family: 'Young Serif', serif;
+
+*/
+
+:root {
+	/*Blanco	HEX	#FFF*/
+	--bgcolor-page: #FFF;
+	/*Azul 	HEX #38739D*/
+	--bgcolor-1: #38739D;
+	/*Azul Intermedio HEX #38739D*/
+	--bgcolor-2: #5581B3;
+	/*Celeste HEX #87C4DE*/
+	--color-2: #87C4DE;
+	/*Amarillo HEX #EFB943*/
+	--color-3: #EFB943;
+	/*Negro	HEX #000*/
+	--text-color-1: #000;
+	/*Azul 	HEX #38739D*/
+	--text-color-2: #38739D;
+	/*Blanco	HEX	#FFF*/
+	--text-color-3: #FFF;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+
+header, main, aside, footer {
+    width: 100%;
+}
+
+header {
+    display: flex;
+	z-index: 2;
+	position: fixed;
+	background-image: url(Imagenes/IMAGEN\ FOOTER\ ok_Mesa\ de\ trabajo\ 1.png);
+	padding: 1rem;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+   
+}
+
+
+#Menu-header {
+	display: flex;
+	opacity: 1;
+	/*place-content: space-around;*/
+	justify-content: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	
+}
+
+#LinkMenu {
+    margin: 0 20px;
+    text-decoration: none;
+    color: var(--text-color-1);
+}
+
+#LinkMenu:hover {
+	color: var(--text-color-2);
+	cursor: pointer;
+	transition: all 300ms;
+	scale: 1.1;
+}
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* Esto asegura que el contenedor ocupe el 100% de la altura de la ventana */
+	background-image: url('Imagenes/Fondo\ Carta.png');
+	background-size: 80%; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+	background-position: center center; /* Centra la imagen horizontal y verticalmente */
+	background-repeat: no-repeat; /* Evita la repetición de la imagen */
+	background-attachment: fixed; /* Hace que la imagen se mantenga fija mientras se hace scroll */
+  }
+
+header #Imagen-header {
+	width: 100%;
+  	height: auto;
+	padding-top: 1em;
+}
+
+/*Menu Hamburguesa
+.bars__menu {
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	display: none;
+	margin-top: 1em;
+	margin-left: 2em;
+}
+
+.bars__menu span {
+	display: block;
+	width: 100%;
+	height: 4px;
+	background: rgb(40, 187, 255);
+	border-radius: 15px;
+	margin-top: 8px;
+	transform-origin: 0px 100%;
+	transition: all 300ms;
+
+}
+
+.activeline1__bars-menu {
+	transform: rotate(45deg) translate(-2px, 1px);
+}
+.activeline3__bars-menu {
+	transform: rotate(-45deg) translate(-4px, 2px);
+}
+.activeline2__bars-menu {
+	opacity: 0;
+	margin-left: -30px;
+} */
+
+/* #Menu-header {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+#LinkMenu {
+	color: var(--text-color-1);
+}
+#LinkMenu:hover {
+		
+	color: #FFF;
+	cursor: pointer;
+} */
+
+
+/* Agregado*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #87C4DE;
+    
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+	.Links-Candidatos ul,.Links-Candidatos2 ul{
+		/* display: flex; */
+		/* flex-direction: column; */
+		flex-wrap: wrap;
+		justify-content: center
+		
+	}
+	.JML,.PBL,.SML,.JSL,.MBL {
+		display: flex;
+		align-self: center;
+		
+	}
+
+	
+	#SM-titulo  {
+		color: var(--text-color-2);
+		text-align: center;
+		font-size: 2em;
+		margin: 0;
+		padding: 0;
+	}
+
+}
+
+
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+	header{
+		justify-content: flex-end;
+	}
+
+	.Links-Candidatos ul,.Links-Candidatos2 ul{
+		display: flex !important;
+		flex-direction: column;
+		align-content: center;
+		
+	}
+     
+    .Links-Candidatos img,.Links-Candidatos2 img{
+		width: 250px;
+		/* height: 200px; */
+		
+	}
+
+	.PBL img{
+       width: 200px;
+	
+	}
+
+    .JML,.PBL,.SML,.JSL,.MBL {
+		display: flex;
+		/* align-self: center; */
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		/* align-content: center;
+		flex-wrap: nowrap */
+	}
+
+	.Redes-Sociales-FF ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.MFF{
+		
+		visibility: hidden;
+	} 
+
+	#Citas ul{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+	}
+
+
+
+    .abrir-menu {
+        color: #1c1c1c;
+		position: fixed;
+		z-index: 1000;
+		
+    }
+
+    .cerrar-menu {
+        color: #1c1c1c;
+		z-index: 1100;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #5581B3;
+        padding: 1rem;
+        box-shadow: 0 0 0 100vmax rgba(77, 131, 239, 0.5);
+		z-index: 1100;
+    }
+
+    .nav.visible {
+        opacity: 90%;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+   
+	.DEB-ATE {
+		/* display: flex;
+		align-self: center; */
+		position: relative;
+        padding-bottom: 56.25%; 
+        padding-top: 200px; 
+        height: 100%;
+        overflow: hidden;
+	}
+   
+	.DEB-ATE iframe {
+		position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+	}
+    
+	
+	/* .CONTENEDOR iframe{
+		position: absolute;
+		overflow: hidden;
+	    top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+	} */
+
+    .PARTIDO{
+		width: 200px;
+	}
+
+    .Presentacion{
+		margin: 1rem;
+		padding: 1rem;
+	}
+
+	.DC-LISTA{
+		margin: 1rem;
+		padding: 1rem;
+	}
+
+
+	} 
+
+
+/* fin del media Q. */
+
+
+
+
+/* NO header, main, footer {
+	padding-top: 1em;
+	padding-bottom: 1em;
+} */
+
+/*****Transformación links a pages CANDIDATOS*****/
+
+.JML, .PBL, .SML, .JSL, .MBL {
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+.JML:hover, .PBL:hover, .SML:hover, .JSL:hover, .MBL:hover {
+	transform: scale(1.1);
+	}
+
+/**************/
+
+#Servicios {
+	background-color: var(--color-2);
+	color: var(--text-color-3);
+	padding-top: 1em;
+	padding-bottom: 3em;
+}
+
+.boton-consulta {
+	background-color: var(--bgcolor-1);
+	font-family: 'Montserrat', sans-serif;
+	color: var(--text-color-3);
+	border: 2px solid var(--bgcolor-1);
+	border-radius: 3em;
+	padding: .5em 1.1em;
+	display: inline-block;
+	box-shadow: 0px 8px 8px 0px #c0dbe7; 
+}
+
+.boton-consulta:hover {
+	color: var(--bgcolor-1);
+	background-color: var(--text-color-3);
+	box-shadow: 0px 8px 8px 0px var(--bgcolor-2); 
+	
+}
+
+.Links-Candidatos ul, .Links-Candidatos2 ul, footer ul, #Citas ul, .FF ul, .datos-candidato ul {
+	list-style-type: none;
+}
+
+.Links-Candidatos ul,.Links-Candidatos2 ul, #Citas ul, .Redes-Sociales-FF ul {
+	display: flex;
+	justify-content: center;
+	/* place-content: space-between; */
+}
+
+/*Acomodando las fotos candidatos en el index*/
+.JML {
+	margin-left: 1.5em;
+}
+.PBL {
+	margin-right: 1em;
+}
+.SML {
+	margin-right: 5em;
+}
+.MBL {
+	margin-right: 9em;
+}
+.JSL{
+	margin-left: 7em;
+}
+
+/**/
+
+
+/*NO .Menu-FF {
+	margin-left: 50em;
+	margin-top: -1em;
+	position: relative
+}*/
+
+div.CONTENEDOR, div.Redes-Sociales-FF, div.Menu-FF {
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
+	}
+
+	
+
+
+#Servicios div.CONTENEDOR {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	position: relative;
+	
+   	
+	/*padding-top: 14em;
+	padding-bottom: 14em;*/
+}
+
+/*#Servicios H2 {
+	font-size: 2em;
+}*/
+
+#Servicios label {
+	display: block;
+	font-size: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#Servicios input.text, #Servicios textarea,#Servicios iframe {
+	width: 100%;
+	padding: 0,8em;
+	margin-bottom: 1em;
+	border-radius: 0.5em;
+	box-sizing: border-box;
+}
+
+#Servicios input {
+	cursor: pointer;
+	height: 40px;
+}
+
+#Servicios div.CONTENEDOR div {
+	width: 80%;
+}
+
+#Servicios iframe {
+	position: relative;
+	right: 0;
+	margin-top: 1em;
+	margin-right: 1em;
+	width: 80%;
+	/* height: 80%; */
+}
+
+#Servicios FORM {
+	position: relative;
+	right: 0;
+	margin-top: 1em;
+	margin-right: 1em;
+	width: 80%;
+	/* height: 80%; */
+}
+
+
+
+
+/**CANDIDATOS**/
+
+.SM-titulo {
+	color: var(--text-color-2);
+	text-align: center;
+	font-size: 6em;
+	margin: 0;
+	padding: 0;
+}
+
+div.circulo-am {
+	display: flex;
+	justify-content: center;
+	padding: 0 auto;
+	margin: 0 auto;
+}
+
+.SPOT {
+	background-color: var(--color-2);
+	color: var(--text-color-3);
+	padding-top: 2em;
+	padding-bottom: 3em;
+}
+
+main div.CONTENEDOR div.CONT-PRES {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	justify-items: center;
+}
+
+
+
+/*#Servicios div.CONTENEDOR{
+	display: flex;
+	justify-content: space-evenly;
+} 
+div.DC-LISTA ul li:before {
+	content: '';
+	position: absolute;
+	left: 2em;
+	width: 20px;
+	height: 20px;
+	background-image: url(Imagenes/avance-rapido.gif);
+	background-size: contain;
+}*/
+
+div.DC-LISTA #ITEM-GF {
+	/*display: flex;*/
+	place-content: space-between;
+	/*position: absolute;*/
+	left: 2em;
+	width: 15px;
+	height: 15px;
+}
+
+.pie-foto {
+	color: var(--text-color-2);
+	text-align: right;
+	font-size: 0.8em;
+	padding-right: 3em;
+}
+
+/**SLIDES fotos en pages CANDIDATOS**/
+.slider-frame {
+	width: 100%;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+		animation: slide 20s infinite alternate ease-in-out;
+}
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+.slider-frame img {
+	width: 100%;
+}
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+/***/
+
+/**Pages DEBATES**/
+
+main .Titulo-DB, p {
+	text-align: center;
+	animation: infinite alternate ease-in;
+}
+
+main .hashtagDB23 {
+	text-decoration: none;
+}
+
+main div.DEB-ATE {
+	padding-bottom: 2em;
+}
+
+.DEB-ATE {
+	display: flex;
+	align-self: center;
+}
+
+#Citas {
+	background-color: var(--bgcolor-1);
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+
+#Citas li {
+	/**background-color: var(--color-2);**/
+	/**background-image: url(Imagenes/Papel\ Celeste.jpg);**/
+	background-image: url(Imagenes/IMAGEN\ FOOTER\ ok_Mesa\ de\ trabajo\ 1.png);
+	color: var(--text-color-2);
+	margin: 1em;
+	text-align: center;
+	padding: 2em 1 em;
+	padding-bottom: 1em;
+	width: 80%;
+	border-radius: 2em;
+}
+
+#Citas li img {
+	width: 8em;
+	height: 8em;
+	border: 5px solid var(--bgcolor-1);
+	border-radius: 50%;
+	margin-top: -4.5em;
+}
+
+/***/
+
+
+/**FOOTER OK**/
+
+footer {
+	position: relative;
+	background-image: url(Imagenes/IMAGEN\ FOOTER\ ok_Mesa\ de\ trabajo\ 1.png);
+	background-size: cover;
+	background-position: center;
+	text-align: left;
+	width: 100%;
+	height: auto;
+	font-size: small;
+}
+
+#LinkMenuFF {
+    text-decoration: none;
+	color: var(--text-color-1);
+}
+
+#LinkMenuFF:hover {
+	color: var(--text-color-2);
+	cursor: pointer;
+}
+
+/*
+footer{
+	width: 100%;
+	height: auto;
+	background-color: var(--color-2);
+	color: var(--text-color-1);
+	font-size: small;
+	text-align: center;
+	}
+
+div.contenedor-ff {
+	position: relative;
+	background-image: url(Imagenes/IMAGEN\ FOOTER\ ok_Mesa\ de\ trabajo\ 1.png);
+	background-size: cover;
+	background-position: center;
+	text-align: left
+	}*/
+
+.Redes-Sociales-FF {
+	display: flex;
+	place-content: space-between;
+	justify-content: center;
+   
+}
+	
+.Redes-Sociales-FF ul li {
+	padding-right: 1em;
+}
+	
+div.Redes-Sociales-FF {
+	padding-top: 1em;
+	padding-right: 2em;
+	padding-left: 2em;
+	flex-wrap: wrap
+}
+
+.MFF {
+	margin-right: 3em;
+	padding-top: 1em;
+}
+
+div.Derechos-reservados {
+	font-size: small
+	color (--text-color-1);
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.animate__animated {
+	--animate-duration: 3s;
+	animation-iteration-count: 2;
+  }
+
+/* #CONTENEDOR-RES{
+	width: 100%;
+    height: auto;
+	overflow: visible;
+} */
+
+/* probando responsive en b-resultados */
+
+.B-RESULTADOS {
+	display: flex;
+	align-self: center;
+	position: relative;
+	padding-bottom: 56.25%; 
+	padding-top: 200px; 
+	height: 100%;
+	overflow: hidden;
+}
+
+.B-RESULTADOS iframe {
+	position: absolute;
+	margin-left: 1em;
+	margin-right: 5em;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+#B-RESULTADOS {
+	background-image: url(https://resultados.gob.ar/);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	width: 99%;
+	height: auto;
+	overflow: hidden;
+	padding-top: -0,5;
+}
+
+
+/**NO FF
+
+div.Menu-FF {
+	margin-right: auto;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#QR-FF {
+	margin: auto;
+	display: block;	
+}
+
+#IMG-FF {
+	width: 100%;
+  	height: auto;
+}
+.Redes-Sociales-FF {
+	position: absolute;
+	transform: translate(-50%; -50);
+}
+
+div.Derechos-reservados {
+	font-size: small
+	color (--text-color-1)
+	padding-top: 1em;
+	padding-bottom: 1em;
+		text-shadow: 0 0 8px #c0dbe7;
+		width: 1080px;
+		margin: 0 auto;
+		position: absolute;
+		top: auto;
+		left: auto
+		transform: translate(-50%, -50%);
+
+EX Footer {
+	background-image: url(Imagenes/ABAJO\ ARG\ VOTA\ con\ qr.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: var(--color-2); 
+	}
+	
+*****/
+
+
+
+/**RESPONSIVE**/
+
+.abrir-menu, .cerrar-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+	.CONTENEDOR.Links-Candidatos ul, .CONTENEDOR.Links-Candidatos2 ul {
+		flex-direction: column;
+	}
+	header{
+		display: sticky;
+		z-index: 1;
+	}
+	#Menu-header{
+		display: solid;
+		flex-direction: column;
+		padding: 20px;
+		opacity: 1;
+		visibility: visible;		
+	}
+	.bars__menu {
+
+		display: block;
+	}
+	.bars__menu:checked ~ #Menu-header{
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.Links-Candidatos ul,.Links-Candidatos2 ul{
+		/* display: flex; */
+		/* flex-direction: ; */
+		flex-wrap: wrap;
+		justify-content: center
+	}
+	
+	.JML,.PBL,.SML,.JSL,.MBL {
+		display: flex;
+		align-self: center;
+		
+	}
+	
+	#SM-titulo  {
+		color: var(--text-color-2);
+		text-align: center;
+		font-size: 2em;
+		margin: 0;
+		padding: 0;
+	}
+
+}
+
+
+@media only screen and (max-width: 550px) {
+    .abrir-menu, .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+	
+	header{
+		justify-content: flex-end;
+	}
+
+	.Links-Candidatos ul,.Links-Candidatos2 ul{
+		display: flex !important;
+		flex-direction: column;
+		align-content: center;
+		
+	}
+     
+    .Links-Candidatos img,.Links-Candidatos2 img{
+		width: 250px;
+		/* height: 200px; */
+		
+	}
+
+	.PBL img{
+       width: 200px;
+	
+	}
+
+    .JML,.PBL,.SML,.JSL,.MBL {
+		display: flex;
+		/* align-self: center; */
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		/* align-content: center;
+		flex-wrap: nowrap */
+	}
+
+	.Redes-Sociales-FF ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.MFF{
+		
+		visibility: hidden;
+	} 
+
+	#Citas ul{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+	}
+
+
+
+    .abrir-menu {
+        color: #1c1c1c;
+		position: fixed;
+		z-index: 1000;
+		
+    }
+
+
+    .cerrar-menu {
+        color: #1c1c1c;
+		z-index: 1100;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #5581B3;
+        padding: 1rem;
+        box-shadow: 0 0 0 100vmax rgba(77, 131, 239, 0.5);
+		z-index: 1100;
+    }
+
+    .nav.visible {
+        opacity: 90%;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+   
+	.DEB-ATE {
+		/* display: flex;
+		align-self: center; */
+		position: relative;
+        padding-bottom: 56.25%; 
+        padding-top: 200px; 
+        height: 100%;
+        overflow: hidden;
+	}
+   
+	.DEB-ATE iframe {
+		position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+	}
+    
+	
+	/* .CONTENEDOR iframe{
+		position: absolute;
+		overflow: hidden;
+	    top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+	} */
+
+    .PARTIDO{
+		width: 200px;
+	}
+
+    .Presentacion{
+		margin: 1rem;
+		padding: 1rem;
+	}
+
+	.DC-LISTA{
+		margin: 1rem;
+		padding: 1rem;
+	}
+
+
+	} 
+
+
+/* fin del media Q. */
+
+>>>>>>> 84eae833b36d4edad4b72dea7cf8ef3eee0eda9d
