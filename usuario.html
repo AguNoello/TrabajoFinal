@@ -16,7 +16,18 @@
       <!-- place navbar here -->
       
       </header>
-      
+      <style>
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Esto asegura que el contenedor ocupe el 100% de la altura de la ventana */
+        background-image: url('Imagenes/Fondo\ Carta.png');
+        background-size: 80%; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+        background-position: center center; /* Centra la imagen horizontal y verticalmente */
+        background-repeat: no-repeat; /* Evita la repetición de la imagen */
+        background-attachment: fixed; /* Hace que la imagen se mantenga fija mientras se hace scroll */
+        }</style>
       <main>
       <div id="app" class="container">
         <h1>Usuarios</h1>
@@ -25,7 +36,7 @@
 
       <div id="FondoCarta" v-if="error">
       <p>Lo sentimos, vuelva a cargar la página por favor... 🔁</p>
-
+      
       </div>
       <div v-else>
         <section v-if="cargando">
