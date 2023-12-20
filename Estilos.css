@@ -184,6 +184,17 @@ header {
 .cerrar-menu {
     display: none;
 }
+#TablaMain {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* Esto asegura que el contenedor ocupe el 100% de la altura de la ventana */
+	background-image: url('Imagenes/Fondo\ Carta.png');
+	background-size: 80%; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+	background-position: center center; /* Centra la imagen horizontal y verticalmente */
+	background-repeat: no-repeat; /* Evita la repetición de la imagen */
+	background-attachment: fixed; /* Hace que la imagen se mantenga fija mientras se hace scroll */
+  }
 
 @media screen and (max-width: 900px) {
 	.Links-Candidatos ul,.Links-Candidatos2 ul{
