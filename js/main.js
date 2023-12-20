@@ -13,6 +13,8 @@ aria-expanded="false" aria-label="Toggle navigation">
 <li class="nav-item">
 <a class="nav-link active" href="index.html" aria-current="page">INICIO<span
 
+
+
 class="visually-hidden">(current)</span></a>
 
 </li>
@@ -20,7 +22,8 @@ class="visually-hidden">(current)</span></a>
 </li>
 
 </ul>
-
+<!-- Nuevo botón a la derecha con clase para alinear -->
+<a class="btn btn-primary ms-auto" href="usuario_nuevo.html">Nuevo Usuario</a>
 </div>
 </div>
 </nav>
