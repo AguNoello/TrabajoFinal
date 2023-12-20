@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.getElementById("header").innerHTML=` <nav class="navbar navbar-expand-sm
 navbar-light bg-light">
 <div class="container">
@@ -29,7 +28,6 @@ class="visually-hidden">(current)</span></a>
 </div>
 </nav>
 `
-=======
 document.getElementById("header").innerHTML=` <nav class="navbar navbar-expand-sm
 navbar-light bg-light">
 <div class="container">
@@ -60,4 +58,3 @@ class="visually-hidden">(current)</span></a>
 </div>
 </nav>
 `
->>>>>>> 84eae833b36d4edad4b72dea7cf8ef3eee0eda9d
