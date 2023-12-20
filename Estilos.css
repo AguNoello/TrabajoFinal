@@ -190,7 +190,7 @@ header {
 	align-items: center;
 	height: 100vh; /* Esto asegura que el contenedor ocupe el 100% de la altura de la ventana */
 	background-image: url('Imagenes/Papel\ Celeste.jpg');
-	background-size: 100%; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+	background-size: 140%; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
 	background-position: center center; /* Centra la imagen horizontal y verticalmente */
 	background-repeat: no-repeat; /* Evita la repetición de la imagen */
 	background-attachment: fixed; /* Hace que la imagen se mantenga fija mientras se hace scroll */
