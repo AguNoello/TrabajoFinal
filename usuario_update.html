@@ -12,10 +12,45 @@ integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+f
 <header id="header">
 <!-- place navbar here -->
 </header>
+<style>
+    .container {
+        text-align: center;
+    }
+
+    form {
+        background: url('Imagenes/Papel\ Celeste.jpg') no-repeat center center fixed;
+        background-size: cover;
+        margin: 90px auto;
+        width: 400px;
+        padding: 90px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h2 {
+        padding-bottom: 50px;
+        color: #0a0808; /* Cambia el color del texto según tu preferencia */
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 1.5em;
+        color: #000000; /* Cambia el color del texto según tu preferencia */
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+    }
+</style>
+
+
 <main>
             <div class="container" id="app">
-                <form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-                <h2>Editar Usuario </h2>
+                <form style="background: url('Imagenes/Papel\ Celeste.jpg') no-repeat center center fixed; background-size: cover; margin: 90px auto; width: 400px; padding: 90px;">
+                    <h2>Editar Usuario </h2>
                 <div class="mb-3">
                 <label for="id">Id</label>
                 <input type="number" name="id" id="id" disabled v-model="id" >
@@ -26,15 +61,15 @@ integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+f
                 <label for="firstname">Nombre completo</label>
                 <input type="text" name="firstname" id="firstname" v-model="firstname">
                 </div>
-
-                <div class="mb-3">
-                <label for="comment">Comentario</label>
-                <input type="text" name="comment" id="comment" v-model="comment">
-                </div>
                 <div class="mb-3">
                 <label for="email">Correo</label>
                 <input type="text" name="email" id="email" v-model="email">
                 </div>
+                <div class="mb-3">
+                    <label for="comment">Comentario</label>
+                    <input type="text" name="comment" id="comment" v-model="comment">
+                </div>
+    
                 <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
             </div>
 </main>

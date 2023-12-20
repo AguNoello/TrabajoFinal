@@ -25,6 +25,7 @@ createApp({
           this.username = data.username;
           this.firstname = data.firstname;
           this.comment = data.comment;
+          this.email = data.email;
         })
         .catch(err => {
           console.error(err);
